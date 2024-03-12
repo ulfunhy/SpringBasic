@@ -10,11 +10,12 @@
 	                    http://www.springframework.org/schema/aop
 	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-<!--    스프링에게 TestBean 객체 t1을 만들으라고 명령을 내린다-->
-<bean id="t1" class="kr.hs.study.beans.TestBean"/>
-<!--    TestBean t1 = new TestBean();-->
-<!--    new TestBean();-->
+        <!--    스프링에게 TestBean 객체 t1을 만들으라고 명령을 내린다-->
+        <!--    <bean class="kr.hs.study.beans.TestBean"/>-->
+        <!--            TestBean t1 = new TestBean();-->
 
-
+        <!--    스프링에게 TestBean 객체 t1을 만들으라고 명령을 내린다-->
+        <bean id="t1" class="kr.hs.study.beans.TestBean"/>
+        <bean id="t2" class="kr.hs.study.beans.TestBean2" scope="prototype"/>
 
 </beans>
